@@ -12,23 +12,23 @@ using namespace std;
 
 int main()
 {
-  char n;
+  int n;
 
   cout << "Give me something: ";
 
-  n = _getch();
+  n = _getch() - '0';
 
   cout << n << endl;
 
-  if(n == '0') {
+  if(n == 0) {
     cout << "Hello World" << endl;
-  } else if(n == '1') {
+  } else if(n == 1) {
     cout << "I am Groot" << endl;
-  } else if(n == '2') {
+  } else if(n == 2) {
     cout << "To the Top" << endl;
-  } else if(n == '3') {
+  } else if(n == 3) {
     cout << "Where is the horizon" << endl;
-  } else if(n == '4') {
+  } else if(n == 4) {
     cout << "I do not know" << endl;
   } else {
     cout << "Yeah, I will" << endl;
