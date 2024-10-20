@@ -4,30 +4,35 @@
  * @app desc: To complete task stated in LabortoryExercise005 of ITE7101
  * ****************************************************************/
 
-#include <cstdio>
-#include <cstdlib>
 #include <iostream>
-#include <limits>
+#include <conio.h> // for _getch()
 #include "_pause.h"
 
 using namespace std;
 
 int main()
 {
-  char name[50];
+  char n;
 
-  const char* divider = "\n================================================\n";
+  cout << "Give me something: ";
 
-  cout << "Let's try basic input-output console routine!" << endl << divider << endl;
+  n = _getch();
 
-  cout << "What is your first name? ";
+  cout << n << endl;
 
-  cin >> name;
-
-  cout << "Hello " << name << endl << divider << endl;
-
-  // Clear the input buffer so that the console doesn't exit immediately
-  cin.ignore(numeric_limits<streamsize>::max(), '\n');
+  if(n == '0') {
+    cout << "Hello World" << endl;
+  } else if(n == '1') {
+    cout << "I am Groot" << endl;
+  } else if(n == '2') {
+    cout << "To the Top" << endl;
+  } else if(n == '3') {
+    cout << "Where is the horizon" << endl;
+  } else if(n == '4') {
+    cout << "I do not know" << endl;
+  } else {
+    cout << "Yeah, I will" << endl;
+  }
 
   // ********************** DO NOT CHANGE **********************
   // Print a new line and ask user for any key before exiting
