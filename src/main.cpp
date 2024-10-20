@@ -20,18 +20,24 @@ int main()
 
   cout << n << endl;
 
-  if(n == 0) {
-    cout << "Hello World" << endl;
-  } else if(n == 1) {
-    cout << "I am Groot" << endl;
-  } else if(n == 2) {
-    cout << "To the Top" << endl;
-  } else if(n == 3) {
-    cout << "Where is the horizon" << endl;
-  } else if(n == 4) {
-    cout << "I do not know" << endl;
-  } else {
-    cout << "Yeah, I will" << endl;
+  switch(n) {
+    case 0:
+      cout << "Hello World" << endl;
+      break;
+    case 1:
+      cout << "I am good" << endl;
+      break;
+    case 2:
+      cout << "To the Top" << endl;
+      break;
+    case 3:
+      cout << "Where is the horizon" << endl;
+      break;
+    case 4:
+      cout << "I do not know" << endl;
+      break;
+    default:
+      cout << "Yeah, I will" << endl;
   }
 
   // ********************** DO NOT CHANGE **********************
